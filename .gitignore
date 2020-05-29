@@ -1,0 +1,9 @@
+# para conexion a la base de datos
+config.php
+#Carpetas de proyectos
+nbproject/
+.idea/
+#archivos de respaldo
+*~
+*.swp
+/.ssh/

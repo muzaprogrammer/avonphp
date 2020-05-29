@@ -1,0 +1,225 @@
+* {
+    padding:0;
+    margin:0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {background:#FEFEFE;}
+
+.menu_bar {
+    display:none;
+}
+
+header {
+    width: 100%;
+}
+
+header {
+    background: rgba(255,255,255);
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+}
+
+header nav {
+    background:#da0b65;
+    z-index:1000;
+    max-width: 1000px;
+    width:95%;
+    margin:20px auto;
+}
+
+header nav ul {
+    list-style:none;
+}
+
+header nav ul li {
+    display:inline-block;
+    position: relative;
+}
+
+header nav ul li:hover {
+    background:#e94673;
+}
+
+header nav ul li a {
+    color:#fff;
+    display:block;
+    text-decoration:none;
+    padding: 20px;
+}
+
+header nav ul li a span {
+    margin-right:10px;
+}
+
+header nav ul li:hover .children {
+    display:block;
+}
+
+header nav ul li .children {
+    display: none;
+    background:#da0b65;
+    position: absolute;
+    width: 150%;
+    z-index:1000;
+}
+
+header nav ul li .children li {
+    display:block;
+    overflow: hidden;
+    border-bottom: 1px solid rgba(255,255,255,.5);
+}
+
+header nav ul li .children li a {
+    display: block;
+}
+
+header nav ul li .children li a span {
+    float: right;
+    position: relative;
+    top:3px;
+    margin-right:0;
+    margin-left:10px;
+}
+
+header nav ul li .caret {
+    position: relative;
+    top:3px;
+    margin-left:10px;
+    margin-right:0px;
+}
+
+@media screen and (max-width: 800px) {
+    body {
+        padding-top:80px;
+    }
+
+    .menu_bar {
+        display:block;
+        width:100%;
+        position: fixed;
+        top:0;
+        background:#da0b65;
+    }
+
+    .menu_bar .bt-menu {
+        display: block;
+        padding: 20px;
+        color: #fff;
+        overflow: hidden;
+        font-size: 25px;
+        font-weight: bold;
+        text-decoration: none;
+    }
+
+    .menu_bar span {
+        float: right;
+        font-size: 40px;
+    }
+
+    header nav {
+        width: 80%;
+        height: calc(100% - 80px);
+        position: fixed;
+        right:100%;
+        margin: 0;
+        overflow: scroll;
+    }
+
+    header nav ul li {
+        display: block;
+        border-bottom:1px solid rgba(255,255,255,.5);
+    }
+
+    header nav ul li a {
+        display: block;
+    }
+
+    header nav ul li:hover .children {
+        display: none;
+    }
+
+    header nav ul li .children {
+        width: 100%;
+        position: relative;
+    }
+
+    header nav ul li .children li a {
+        margin-left:20px;
+    }
+
+    header nav ul li .caret {
+        float: right;
+    }
+}
+
+/*Agregamos margenes inferiores a los parrafos*/
+p {
+    margin-bottom: 20px;
+}
+
+.contenido {
+    padding-top: 105px;
+}
+
+
+/*para slide show prueba*/
+/** {*/
+/*    margin:0;*/
+/*    padding:0;*/
+/*}*/
+
+/*body {*/
+/*    background:#fff;*/
+/*}*/
+
+.main {
+    width:90%;
+    max-width:1000px;
+    margin:20px auto;
+}
+
+.slides {
+    width:100%;
+}
+
+.slides img {
+    width:100%;
+}
+
+.slidesjs-pagination {
+    background:#424242;
+    list-style:none;
+    overflow:hidden;
+}
+
+.slidesjs-pagination li {
+    float:left;
+}
+
+.slidesjs-pagination li a {
+    display:block;
+    padding:10px 20px;
+    color:#fff;
+    text-decoration:none;
+}
+
+.slidesjs-pagination li a:hover {
+    background:#000;
+}
+
+.slides .active {
+    background:#000;
+}
+
+.slidesjs-navigation{
+    background:#000;
+    color:#fff;
+    text-decoration:none;
+    display:inline-block;
+    padding:13.5px 20px;
+    float:right;
+}
